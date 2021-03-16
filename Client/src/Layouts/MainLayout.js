@@ -1,35 +1,18 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "../css/MainLayout.css";
-import {
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from "@ant-design/icons";
-import { Layout, Menu } from "antd";
+import { Layout } from "antd";
+
+// Importación de Componentes
+import Sider from "../components/LayoutComp/Sider";
+
 
 const MainLayout = (props) => {
-  const { Header, Content, Footer, Sider } = Layout;
+  const { Header, Content, Footer } = Layout;
   const { routes } = props;
   return (
     <Layout>
-      <Sider breakpoint="lg" collapsedWidth="0">
-        <div className="logo" />
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
-          <Menu.Item key="1" icon={<UserOutlined />}>
-            nav 1
-          </Menu.Item>
-          <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-            nav 2
-          </Menu.Item>
-          <Menu.Item key="3" icon={<UploadOutlined />}>
-            nav 3
-          </Menu.Item>
-          <Menu.Item key="4" icon={<UserOutlined />}>
-            nav 4
-          </Menu.Item>
-        </Menu>
-      </Sider>
+      <Sider />
       <Layout>
         <Header
           className="site-layout-sub-header-background"
@@ -40,7 +23,7 @@ const MainLayout = (props) => {
             className="site-layout-background"
             style={{ padding: 24, minHeight: 360 }}
           >
-            <LoadRoutes routes={routes}/>
+            <LoadRoutes routes={routes} />
           </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>ExpoBatiz 2021</Footer>
@@ -56,15 +39,15 @@ function LoadRoutes(props) {
   return (
     <Switch>
       {routes.map((route, index) => (
-      <Route 
-        key={index}
-        path={route.path}
-        exact={route.exact}
-        component={route.component}
-      />
-  ))}
+        <Route
+          key={index}
+          path={route.path}
+          exact={route.exact}
+          component={route.component}
+        />
+      ))}
     </Switch>
-  )
+  );
 }
 
 export default MainLayout;

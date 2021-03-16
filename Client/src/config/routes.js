@@ -17,6 +17,7 @@ const routes = [
                 exact: true
             },
             {
+                //Esto tiene que ir al final de todo
                 component: Error404
             }
         ]
