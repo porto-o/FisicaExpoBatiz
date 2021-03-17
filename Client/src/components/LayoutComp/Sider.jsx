@@ -25,13 +25,13 @@ const Sider = () => {
           </Link>
         </Menu.Item>
         <Menu.Item key="3" icon={<UploadOutlined />}>
-          <Link to={"/tema 3"}>
-            <span>Tema 3</span>
+          <Link to={"/campo"}>
+            <span>Campo eléctrico</span>
           </Link>
         </Menu.Item>
         <Menu.Item key="4" icon={<UserOutlined />}>
-          <Link to={"/tema4"}>
-            <span>Tema 4</span>
+          <Link to={"/capacitancia"}>
+            <span>Capacitancia</span>
           </Link>
         </Menu.Item>
       </Menu>
