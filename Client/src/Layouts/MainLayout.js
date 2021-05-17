@@ -5,6 +5,7 @@ import { Layout } from "antd";
 
 // Importación de Componentes
 import Sider from "../components/LayoutComp/Sider";
+import { GithubFilled } from "@ant-design/icons";
 
 
 const MainLayout = (props) => {
@@ -26,7 +27,9 @@ const MainLayout = (props) => {
             <LoadRoutes routes={routes} />
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>ExpoBatiz 2021</Footer>
+        <Footer style={{ textAlign: "center" }}>ExpoBatiz 2021 &nbsp;
+        <a href="https://github.com/portocreator/FisicaExpoBatiz" target="_blank" rel="noreferrer"><GithubFilled /></a>
+        </Footer>
       </Layout>
     </Layout>
   );

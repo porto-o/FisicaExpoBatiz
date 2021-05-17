@@ -1,16 +1,42 @@
 .logo {
-    height: 32px;
-    margin: 16px;
-    background: rgba(255, 255, 255, 0.2);
-  }
+  height: 100px;
+  margin: 50px;
+}
+.logo2 {
+  height: 300px;
+  width: 300px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.polaroid {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+.text{
   
-  .site-layout-sub-header-background {
-    background: #fff;
-  }
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
   
-  .site-layout-background {
-    background: #fff;
-  }
-    [data-theme="dark"] .site-layout-sub-header-background {
-      background: #141414;
-    }
+}
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+[data-theme="dark"] .site-layout-sub-header-background {
+  background: #141414;
+}

@@ -12,7 +12,7 @@ const Sider = () => {
   const { Sider } = Layout;
   return (
     <Sider breakpoint="lg" collapsedWidth="0">
-      <div className="logo" />
+      <img src="https://www.cecyt9.ipn.mx/assets/files/cecyt9/img/escudos/escudoCECyT9.png" alt="Logo Bátiz" className="logo"/>
       <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
         <Menu.Item key="1" icon={<UserOutlined />}>
           <Link to={"/"}>
